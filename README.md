@@ -6,3 +6,6 @@
 5. BEAUTIFY- 자동 줄 맞춤 
 
 -설정법: 파일 -> 기본 설정 -> 바로가기 키-> HOOKY 검색-> BEAUTIFY FILE
+
+## reset.css 적용하기
+    -head태그 아래에 `<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">`
