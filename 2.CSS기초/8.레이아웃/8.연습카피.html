@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+    <style>
+        .container{
+            border: 4px double black;
+            width: 800px;
+            margin: 0 auto;
+            background: #6B6B65;
+        }
+        .container h1{
+            text-align: center;
+            background: #CAC7B6;
+            color: black;
+            font-size: 35px;
+            padding: 40px;
+            font-weight: bold;
+            box-sizing: border-box;
+        }
+        .container .intro{
+            background: #31312E;
+            color: white;
+            padding: 10px;
+            border-bottom: 3px solid #84847D;
+            text-align: center;
+        }
+        .container .yellow{
+            color: yellow;
+          
+        }
+        
+        .container li{
+            width: 22%;
+            border: 2px solid white;
+            float: left;
+            height: 300px;
+            line-height: 1.6;
+            margin: 2.5% 0.5% ;
+            text-align: center;
+            box-sizing: border-box;
+        }
+    
+        .container .gallery {
+            margin-left: 10%;
+            box-sizing: border-box;
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .container .img-box{
+            margin: 10px;
+        }
+        .container #tulip{
+            background: red;
+            color: gray;
+            
+        }
+        .container #jebi{
+            background:#EA71C8;
+            color: #A616D8;
+        }
+        .container #hobak{
+            background: #E97916;
+            color: #9C9185;
+        }
+        .container #sunflower{
+            background: #F3E713;
+            color: gray;
+        }
+        .container .img-box{
+            padding-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container clearfix">
+        
+        <h1>나의 아름다운 정원</h1>
+    
+        <h2 class="intro">사람들은 아마 자신에게 <span class="yellow">자신감을 북돋워 주는</span> 표정 있는 꽃들을 선호할 것이다.</h2>
+    
+        <ul class="gallery ">
+            <li id="tulip">
+                 <div class="img-box"><img src="../../img/tulip.jpg" alt="튤립" width="100%" height="140px" ></div>
+                
+                <p>
+                    너무 화려하지 않으며 고귀한 느낌을 가지고 있다.
+                    붉은 색이 단연 으뜸이며 한 송이만 있어도 빼어나다.
+                </p>
+            </li>
+            <li id="jebi">
+                 <div class="img-box"><img src="../../img/jebi.jpg" alt="제비" width="100%" ></div>
+                <p>
+                    드물게 푸른색을 띠고 있으며 작지만 시원해 보이는
+                    어린 꽃이라고 할 수 있다. 여럿이 함께 있을 때 더욱 아름답다.
+                </p>
+            </li>
+            <li id="hobak">
+                 <div class="img-box"><img src="../../img/hobak.jpg" alt="호박" width="100%"></div>
+                <p>
+                    색도 모양도 화려하며 이름과 걸맞지 않게 아름다운 꽃으로
+                    매우 완숙한 이미지를 풍기는 꽃이다.
+                </p>
+            </li>
+            <li id="sunflower">
+                 <div class="img-box"><img src="../../img/sunflower.jpg" alt="해바라기" width="100%"></div> 
+                <p>
+                    태양만 바라보는 일편단심의 꽃으로 얼굴이 큰 편에
+                    속하며 송이가 적어야 제격이다.
+                </p>
+            </li>
+        </ul>
+    
+    </div>
+</body>
