@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <STyle>
+        .navi{
+            /* 점 제거 */
+            list-style: none;
+            width: 70%;
+            margin: 0 auto;
+            padding: 0;
+        }
+        .navi li {
+     
+            float: left;
+            margin: 30px;
+            text-align: center;
+            margin: 0 1%;
+            width: 18%;
+            padding-bottom: 10px;
+            
+        }
+        .navi li a{
+            /* 밑줄 제거 */
+            text-decoration: none;
+            /* 글자 색 상속 받기 */
+            color: inherit;
+            font-size: 30px;
+            
+        }
+        .navi li:hover {
+            border-bottom: solid red 8px;
+            transition: 0.4s;
+
+        }
+        .clearfix::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+    </STyle>
+</head>
+<body>
+    
+    <ul class="navi clearfix">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="#">LINK</a></li>
+        <li><a href="#">BOARD</a></li>
+        <li><a href="#">LOGIN</a></li>
+    </ul>
+
+</body>
+</html>

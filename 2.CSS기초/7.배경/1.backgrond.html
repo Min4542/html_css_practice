@@ -7,18 +7,22 @@
     <title>Document</title>
     <style>
         .box{
-            width: 550px;
+             width: 550px;
             height: 350px;
-            border: 2px dashed gray;
+            border: 2px dashed gray; 
 
-            background-color: orange;
+            /* background-color: orange;
             background-image: url('./img/sky.jpg');
             background-size: 200px;
-            background-repeat: no-repeat;
+            background-repeat: no-repeat; */
             /* 앞이 x축 뒤가 y */
-            background-position: center ;
+            /* top,bottom,left,right,center, 픽셀로도 사용가능 */
+            /* background-position: center center ; */
             /* 세로는 비율에 맞게 늘어남 픽셀로 할시 */
-            background-size: cover;
+            /* background-size: cover; */
+
+            /* size와 position이 헷갈리지 않게 /로 구분 앞은 position이고 뒤는 size이다 */
+            background: orange url('img/sky.jpg') no-repeat fixed 50px 30px / 200px 100px;
         }
     </style>
 </head>
