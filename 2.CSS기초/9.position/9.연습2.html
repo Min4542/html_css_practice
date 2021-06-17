@@ -13,12 +13,14 @@
         section{
             width: 30%;
             margin: 60px auto;
+            background-color: aqua;
         }
         section .boxlist{
             text-align:  center;
         }
         section .box{
-            padding-top: 30px;
+            /* line-height하고 height를 같게하면 텍스트가 정중아에 온다  +ttext align*/
+            line-height: 100px;
             float: left;
             width: 100px;
             height: 100px;
@@ -28,7 +30,24 @@
             background: rgb(212, 96, 96);
             position: relative;
             box-sizing: border-box;
+            /* 그림자 효과:box-shadow , text-shadow
+            ex) box-shadow: 가로그림자길이 ,세로그림자길이,블러효과크기,색상
+             */
+             box-shadow: 20px 20px 15px black;
         }
+        section .boxlist li .box:hover{
+            z-index: 200;
+            border: 4px dashed yellow;
+            border-radius: 15px;
+            background-color: #9292448a;
+            position: relative;
+            bottom: 10px;
+            right: 0;
+            transition: 1s;
+            transform: translate(-20px);
+
+        }
+        /*  
         section .boxlist li .box1:hover{
             z-index: 200;
             border: 4px dashed yellow;
@@ -79,6 +98,7 @@
             bottom: 10px;
             right: 0;
         }
+        */
         .clearfix::after{
             content: '';
             clear: both;
